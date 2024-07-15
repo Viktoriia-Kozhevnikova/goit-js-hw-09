@@ -1,25 +1,123 @@
-/**
-  |============================
-  | include css partials with
-  | default @import url()
-  |============================
-*/
-@import url('./reset.css');
-@import url('./vite-promo.css');
-@import url('./header.css');
-
 :root {
-  font-family: Inter, Avenir, Helvetica, Arial, sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-size: 16px;
   line-height: 24px;
   font-weight: 400;
+  margin: 0 auto;
+  padding: 24px;
+}
 
-  color: #242424;
-  background-color: rgba(255, 255, 255, 0.87);
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
 
-  font-synthesis: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  -webkit-text-size-adjust: 100%;
+p:last-child {
+  margin-bottom: 0;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+a {
+  color: currentColor;
+  text-decoration: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  list-style: none;
+  gap: 24px;
+}
+
+.gallery-image {
+  width: 360px;
+  cursor: pointer;
+  transition: transform 250ms ease-in-out;
+}
+
+.gallery-image:hover {
+  transform: scale(1.1);
+}
+
+.feedback-form {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 24px;
+  gap: 16px;
+}
+
+.form-label {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  color: #2E2F42;
+  letter-spacing: 0.64px;
+  gap: 8px;
+}
+
+.input {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 4px;
+  border: 1px solid #808080;
+}
+
+.email {
+  width: 360px;
+  height: 40px;
+  padding-top: 8px;
+  padding-left: 16px;
+}
+
+.message {
+  width: 360px;
+  height: 80px;
+  padding-top: 8px;
+  padding-left: 16px;
+
+}
+
+.input:hover {
+  border-color: rgba(0, 0, 0, 1);
+}
+
+.form-button {
+  display: flex;
+  color: #FFF;
+  font-weight: 500;
+  letter-spacing: 0.64px;
+  justify-content: center;
+  align-items: center;
+  background: #4E75FF;
+  border-radius: 8px;
+  border-color: transparent;
+  padding: 8px 16px;
+  gap: 10px;
+}
+
+.form-button:hover {
+  background: #6C8CFF;
 }
